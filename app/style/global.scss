@@ -1,0 +1,26 @@
+@import "../style/footer.scss";
+@import "../style/items.scss";
+@import "../style/back.scss";
+@import "../style/details.scss";
+@import "../style/header.scss";
+@import "../style/more.scss";
+@import "../style/title.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$body-bg: #181818;
+
+body {
+    background-color: $body-bg;
+    overflow-x: hidden;
+}
+
+
+
+.loading{
+    height: 100vh;
+    background-color: aqua;
+}

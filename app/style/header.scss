@@ -1,0 +1,47 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    nav{
+        z-index: 2;
+        margin-left: 30px;        
+        
+    }
+    .join {
+        background-color: red;
+        border-radius: 2px;
+    }
+    
+    .sign {
+        border: 1px white solid;
+        border-radius: 2px;
+    
+    }
+    
+   
+}
+
+@media screen and (max-width:900px) {
+    header{
+        .register{
+             h5{
+                display: none;
+             }
+             
+        }
+    }
+}
+
+@media screen and (max-width:420px) {
+    header{
+        .register{
+             button{
+                padding: 5px 10px;
+             }
+             
+        }
+    }
+}

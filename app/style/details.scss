@@ -1,0 +1,114 @@
+$text-color: #949999;
+$bg-footer: #181818;
+
+main {
+    position: relative;
+
+    .img {
+        width: 100%;
+        height: 90vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+    }
+
+    .shadows {
+        width: 40%;
+        height: 90vh;
+        position: absolute;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0,0,0,0.75));
+        box-shadow: 74px 1px 63px 35px rgba(8, 7, 7, 0.74);
+        -webkit-box-shadow: 74px 1px 63px 35px rgba(0, 0, 0, 0.74);
+        -moz-box-shadow: 74px 1px 63px 35px rgba(0, 0, 0, 0.74);
+    }
+
+    .container {
+        position: absolute;
+        top: 0;
+        width: 550px;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        
+
+        .detail {
+            margin-left: 40px;
+            *{
+                padding: 10px 0;
+            }
+            .dote{
+                border: 1px solid $text-color;
+                padding: 4px 2px;
+                padding-left: 0 !important;
+            }
+
+            h2 {
+                font-size: 30px;
+                color: white;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            .span {
+                color: $text-color;
+                *:not(:first-child){
+                    margin-left: 8px;
+                }
+            }
+
+            p {
+                color: white;
+            }
+
+            .genre {
+                color: $text-color;
+            }
+        }
+    }
+    .more-details{
+        min-height: 80px;
+        background-color: $bg-footer;
+        width: 92%;
+        margin: 100px auto;
+        
+        h3{
+            padding: 10px 0 70px 0;
+            color: white;
+        }
+        .row-details{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            color: white;
+            justify-content: space-between;
+            .genre-1{
+                span{margin: 4px;}
+            }
+            .subtitles{
+                span{margin: 4px;}
+            }
+           h4{
+            color: $text-color;
+            padding: 5px 0;
+           }
+        }
+    }
+}
+
+@media screen and (max-width :600px) {
+    main{
+        .img{
+            height: 100vh;
+        }
+        .container{
+            max-width: 90%;
+            .detail{
+                margin-left: 5px;
+            }
+        }
+        .more-details{
+            h3{
+                text-align: center;
+            }
+        }
+    }
+}
