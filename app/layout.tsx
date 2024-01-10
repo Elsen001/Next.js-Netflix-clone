@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
-import "./style/global.scss"
+import "../assets/style/globals.css"
 import { ReduxProvider } from '@/redux/provider/ReduxProvider'
 import Header from '@/components/header/Header'
 import Footer from '@/components/footer/Footer'
