@@ -1,10 +1,10 @@
 "use client"
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getDetails } from '@/app/redux/reducers/DetailsReducer';
-import { AppDispatch } from '@/app/redux/store/store';
-import More from '@/app/components/More';
-import { ItemData } from '@/app/types/types';
+import { ItemData } from '@/types/types';
+import { AppDispatch } from '@/redux/store/store';
+import { getDetails } from '@/redux/reducers/DetailsReducer';
+import More from '@/components/content/More';
 
 
 const Page = ({ params }: { params: { id: number } }) => {

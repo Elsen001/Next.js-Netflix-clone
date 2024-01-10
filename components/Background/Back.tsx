@@ -1,5 +1,5 @@
 import React, {  } from 'react'
-import logo from "../../features/images/1.png"
+import logo from "../../assets/images/1.png"
 import Image from 'next/image'
 
 const Back = () => {

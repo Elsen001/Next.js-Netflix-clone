@@ -1,4 +1,4 @@
-import { Data } from "@/app/types/types";
+import { Data } from "@/types/types";
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 import axios from "axios"
 import { RootState } from "../store/store";

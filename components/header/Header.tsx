@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import logo from "../../features/images/Logonetflix.png";
+import logo from "../../assets/images/Logonetflix.png";
 import Image from 'next/image';
 import Link from 'next/link';
 

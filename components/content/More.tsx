@@ -1,13 +1,13 @@
 "use client"
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { AppDispatch } from "../redux/store/store";
+import { AppDispatch } from "../../redux/store/store";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
-import { getMore } from "../redux/reducers/MoreReducer";
+import { getMore } from "../../redux/reducers/MoreReducer";
 import Image from "next/image";
-import { ItemData2 } from "../types/types";
+import { ItemData2 } from "../../types/types";
 
 interface ImportedRootState {
     more: {

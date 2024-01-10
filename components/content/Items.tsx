@@ -1,17 +1,17 @@
 "use client"
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import { AppDispatch } from "../redux/store/store";
-import { getItems } from "../redux/reducers/DataSliceReducer";
+import { AppDispatch } from "../../redux/store/store";
+import { getItems } from "../../redux/reducers/DataSliceReducer";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-import SwiperButton from "./swiperButton";
-import { useClient } from "./useclient/useClient";
+import SwiperButton from "../swiper/swiperButton";
+import { useClient } from "../useclient/useClient";
 import Image from "next/image";
-import { ItemData, ItemData2 } from "../types/types";
+import { ItemData2 } from "../../types/types";
 
 export interface ImportedRootState {
   items: {
